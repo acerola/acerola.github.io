@@ -1,8 +1,8 @@
 @font-face {
-    font-family: 'IM_Hyemin-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'IM_Hyemin-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -15,139 +15,145 @@ url(/fonts/NotoSansKr/NotoSansKR-Bold.otf) format('opentype');
 }
 
 :root {
-  --chat: #2d2d2d;
-  --base03: #002b36;
-  --base02: #073642;
-  --base01: #586e75;
-  --base00: #657b83;
-  --base0: #839496;
-  --base1: #93a1a1;
-  --base2: #eee8d5;
-  --base3: #fdf6e3;
-  --yellow: #b58900;
-  --orange: #cb4b16;
-  --red: #dc322f;
-  --magenta: #d33682;
-  --violet: #6c71c4;
-  --blue: #268bd2;
-  --cyan: #2aa198;
-  --green: #859900;
-  --special: #bcdcbc;
-  --special2: #d0cab6;
+--chat: #2d2d2d;
+--base03: #002b36;
+--base02: #073642;
+--base01: #586e75;
+--base00: #657b83;
+--base0: #839496;
+--base1: #93a1a1;
+--base2: #eee8d5;
+--base3: #fdf6e3;
+--yellow: #b58900;
+--orange: #cb4b16;
+--red: #dc322f;
+--magenta: #d33682;
+--violet: #6c71c4;
+--blue: #268bd2;
+--cyan: #2aa198;
+--green: #859900;
+--special: #bcdcbc;
+--special2: #d0cab6;
 }
 
 body {
-  -webkit-mask-image: -webkit-gradient(linear, left 20%, left top, from(rgba(0, 0, 0, 1)),to(rgba(0, 0, 0, 0)));
+-webkit-mask-image: -webkit-gradient(linear, left 20%, left top, from(rgba(0, 0, 0, 1)),to(rgba(0, 0, 0, 0)));
 }
 
 html,
 body {
-  background-color: transparent;
-  color: var(--base0);
-  font-size: 24;
-  font-family: 'IM_Hyemin-Bold','Noto Sans KR';
-  letter-spacing: -0.06em;
-  font-weight: 600;
-  height: 100%;
-  overflow: hidden;
+background-color: transparent;
+color: var(--base0);
+font-size: $font_sizepx;
+font-family: 'IM_Hyemin-Bold','Noto Sans KR';
+letter-spacing: -0.06em;
+font-weight: 600;
+height: 100%;
+overflow: hidden;
 }
 
 #log {
- 	position: absolute;
- 	bottom: 0;
- 	left: 0;
- 	padding: 0 10px 10px;
- 	width: 100%;
- 	box-sizing: border-box
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ padding: 0 10px 10px;
+ width: 100%;
+ box-sizing: border-box
 }
 
 #log > div {
- position:relative;
- word-wrap: break-word;
- margin: 50px;
- width:400px;
- background-color: rgba(255, 255, 255, 0.8); /* --base03 */
- border-radius: 20px;
- box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
- padding-bottom: .25em;
- padding: 15px;
- animation: fadeIn .8s ease, fadeOut .8s ease $message_hide_delays forwards;
+position:relative;
+word-wrap: break-word;
+margin: 50px;
+width:400px;
+background-color: rgba(255, 255, 255, 0.8); /* --base03 */
+border-radius: 20px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+padding-bottom: .25em;
+padding: 15px;
+animation: fadeIn .8s ease, fadeOut .8s ease $message_hide_delays forwards;
 }
 
 .meta {
-  margin: -10px -10px 3px;
-  padding: 5px 10px;
-  border-radius: 5px 5px 0 0;
+margin: -10px -10px 3px;
+padding: 5px 10px;
+border-radius: 5px 5px 0 0;
 }
 
 .colon {
-  display: none;
+display: none;
 }
 
+.badge {
+display: none;
+}
+
+
 .name {
-  display: none;
+display: none;
 }
 
 #log .emote_wrap {
-  position: relative;
+position: relative;
 }
 
 #log .emote_wrap img.emoticon {
-  vertical-align: middle;
-  margin: -5px 0;
+vertical-align: middle;
+margin: -5px 0;
 }
 
 .message {
-  color: var(--chat) !important;
+color: var(--chat) !important;
 }
 
 .meta[style="color: #0000FF"] {
-  color: var(--blue) !important;
+color: var(--blue) !important;
 }
 
 .meta[style="color: #00FF00"] {
-  color: var(--green) !important;
+color: var(--green) !important;
 }
 
 .meta[style="color: #2E8B57"] {
-  color: var(--orange) !important;
+color: var(--orange) !important;
 }
 
 .meta[style="color: #DAA520"] {
-  color: var(--yellow) !important;
+color: var(--yellow) !important;
 }
 
 .meta[style="color: #B22222"] {
-  color: var(--violet) !important;
+color: var(--violet) !important;
 }
 
 .meta[style="color: #FF7F50"] {
-  color: var(--special2) !important;
+color: var(--special2) !important;
 }
 
 .meta[style="color: #FF4500"] {
-  color: var(--red) !important;
+color: var(--red) !important;
 }
 
 .name::before, .name::after {
-  color: var(--special);
+color: var(--special);
 }
 
 .name::before {
- border-top:15px solid rgba(255, 255, 255, 0.8);
- border-left: 15px solid transparent;
- border-right: 0px solid transparent;
- border-bottom: 0px solid transparent;
- content:"";
- position:absolute;
- top:20px;
- left:-12px;
+border-top:15px solid rgba(255, 255, 255, 0.8);
+border-left: 15px solid transparent;
+border-right: 0px solid transparent;
+border-bottom: 0px solid transparent;
+content:"";
+position:absolute;
+top:20px;
+left:-12px;
+
 }
 
 .name::after {
-  content: '';
+content: '';
 }
 
 #log > div.deleted {
-  visibility: hidden
+visibility: hidden
 }
