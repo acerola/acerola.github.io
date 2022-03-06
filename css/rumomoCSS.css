@@ -44,7 +44,7 @@ html,
 body {
 background-color: transparent;
 color: var(--base0);
-font-size: 24;
+font-size: $font_sizepx;
 font-family: 'IM_Hyemin-Bold','Noto Sans KR';
 letter-spacing: -0.06em;
 font-weight: 600;
@@ -64,12 +64,13 @@ overflow: hidden;
 #log > div {
 position:relative;
 word-wrap: break-word;
-margin: 50px;
-width:400px;
-background-color: rgba(255, 255, 255, 0.8); /* --base03 */
+margin: 30px;
+width:600px;
+background-color: rgba(255, 255, 255, 1);
 border-radius: 20px;
 box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
 padding-bottom: .25em;
+padding-right: .25em;
 padding: 15px;
 animation: fadeIn .8s ease, fadeOut .8s ease $message_hide_delays forwards;
 }
@@ -146,7 +147,6 @@ content:"";
 position:absolute;
 top:20px;
 left:-12px;
-
 }
 
 .name::after {
