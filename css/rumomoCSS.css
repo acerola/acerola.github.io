@@ -44,7 +44,7 @@ html,
 body {
 background-color: transparent;
 color: var(--base0);
-font-size: $font_sizepx;
+font-size: 24;
 font-family: 'IM_Hyemin-Bold','Noto Sans KR';
 letter-spacing: -0.06em;
 font-weight: 600;
